@@ -14,7 +14,7 @@ The name of the input file should be passed to the program as the first command-
 #Output
 The output of the program is a CSV file. The first row of the file contains month names or numbers. The remaining twenty rows contain the most frequently used hashtags, in the order of decreasing use frequency, with the most frequently used hashtag at the top.
 
-#Notes
+# Notes
 The program assumes that the input file contains a pickled Pandas dataframe with the following columns: author, id, created_at, full_text, and hashtags.
 The program performs case-insensitive counting.
 Hashtag-like words are words that equal one of the hashtags, less the # sign (e.g., for the hashtag #rams, rams is a hashtag-like word).
